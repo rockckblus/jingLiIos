@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        (function (window) {
+            //判断web 还是 app
+            window.trueWeb = trueWeb;
+            function trueWeb() {
+                var url = window.location.href;
+                url = url.split(':');
+                if (url[0] === 'http') {
+                    return true;
+                }
+            }
+
+        })(window);
+    </script>
+    <script src="../../dist/js/init.js"></script>
+    <script src="../../dist/js/updata.js"></script>
+</head>
+<body>
+<h1>
+
+    upData
+</h1>
+</body>
+</html>
